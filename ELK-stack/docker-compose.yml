@@ -1,5 +1,4 @@
-######BachDangTuan#######
-##Docker-compose ELK-stack duoc viet boi Bach Dang Tuan##
+##Docker-compose ELK-stack basic by Bach Dang Tuan##
 version: '3.3'
 services:
   
