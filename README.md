@@ -1,2 +1,2 @@
 # ELK-Stack compose
-Hello anh em
+Docker compose ELK stack (elasticsearch + kibana)
