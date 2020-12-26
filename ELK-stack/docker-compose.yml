@@ -20,6 +20,7 @@ services:
     volumes:
       - esdata1:/usr/share/elasticsearch/data
       - ./elastic/elasticsearch.yml
+      - ./elastic-stack-ca.p12:/usr/share/elasticsearch/config/elastic-stack-ca.p12
     ports:
       - 9200:9200
 
