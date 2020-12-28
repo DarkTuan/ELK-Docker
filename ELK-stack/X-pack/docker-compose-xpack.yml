@@ -13,6 +13,8 @@ services:
       - cluster.name=docker-cluster
       - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - xpack.license.self_generated.type=basic
+      - xpack.monitoring.collection.enabled=true
       - xpack.security.enabled=true
       - xpack.security.transport.ssl.enabled=true
       - xpack.security.transport.ssl.keystore.type=PKCS12
@@ -35,8 +37,8 @@ services:
     container_name: kibana
     environment:
       ELASTICSEARCH_URL: "http://elasticsearch:9200"
-      ELASTICSEARCH_USERNAME: "kibana"
-      ELASTICSEARCH_PASSWORD: "kibana"
+      ELASTICSEARCH_USERNAME: "elastic"
+      ELASTICSEARCH_PASSWORD: "dangtuan12"
     ports:
       - 5601:5601
     depends_on:
